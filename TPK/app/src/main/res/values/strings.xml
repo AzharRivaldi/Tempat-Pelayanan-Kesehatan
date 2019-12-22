@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TPK</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">YOUR API KEY</string>
+</resources>
