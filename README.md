@@ -21,3 +21,6 @@ EasyPermission : https://github.com/googlesamples/easypermissions
 MaterialDesignToast : https://github.com/valdesekamdem/MaterialDesign-Toast
 GoogleProgressBar : https://github.com/jpardogo/GoogleProgressBar
 Android-SimpleLocation : https://github.com/delight-im/Android-SimpleLocation
+
+Tutorial Build with Android Studio https://youtu.be/qiXDjvg_ebA
+Website https://rivaldi48.blogspot.com/
