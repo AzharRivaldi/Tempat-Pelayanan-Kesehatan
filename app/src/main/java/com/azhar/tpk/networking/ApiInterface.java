@@ -1,11 +1,10 @@
-package com.azhar.tpk.networking;
+package com.azhar.tpk.networking
 
-import com.azhar.tpk.data.response.ModelResultDetail;
-import com.azhar.tpk.data.response.ModelResultNearby;
-
-import retrofit2.Call;
-import retrofit2.http.GET;
-import retrofit2.http.Query;
+import com.azhar.tpk.data.response.ModelResultDetail
+import com.azhar.tpk.data.response.ModelResultNearby
+import retrofit2.Call
+import retrofit2.http.GET
+import retrofit2.http.Query
 
 /**
  * Created by Azhar Rivaldi on 18-05-2021
@@ -16,16 +15,14 @@ import retrofit2.http.Query;
  * Linkedin : https://www.linkedin.com/in/azhar-rivaldi
  */
 
-public interface ApiInterface {
-
+interface ApiInterface {
     @GET("nearbysearch/json")
-    Call<ModelResultNearby> getDataResult(@Query("key") String key,
-                                          @Query("keyword") String keyword,
-                                          @Query("location") String location,
-                                          @Query("rankby") String rankby);
+    fun getDataResult(@Query("key") key: String,
+                      @Query("keyword") keyword: String,
+                      @Query("location") location: String,
+                      @Query("rankby") rankby: String?): Call<ModelResultNearby>
 
     @GET("details/json")
-    Call<ModelResultDetail> getDetailResult(@Query("key") String key,
-                                            @Query("placeid") String placeid);
-
+    fun getDetailResult(@Query("key") key: String,
+                        @Query("placeid") placeid: String): Call<ModelResultDetail>
 }
